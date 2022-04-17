@@ -7,8 +7,8 @@ class ListSpecificationsUseCase {
     this.specificationsRepository = specificationsRepository;
   }
 
-  execute() {
-    const specifications = this.specificationsRepository.list();
+  async execute() {
+    const specifications = await this.specificationsRepository.list();
 
     return specifications;
   }
