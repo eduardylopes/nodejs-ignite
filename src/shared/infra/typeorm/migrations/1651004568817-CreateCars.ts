@@ -12,7 +12,6 @@ export class CreateCars1651004568817 implements MigrationInterface {
             type: "uuid",
             isPrimary: true,
           },
-
           {
             name: "name",
             type: "varchar",
@@ -35,7 +34,7 @@ export class CreateCars1651004568817 implements MigrationInterface {
             type: "varchar",
           },
           {
-            name: "final_amount",
+            name: "fine_amount",
             type: "numeric",
           },
           {
