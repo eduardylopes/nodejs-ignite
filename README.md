@@ -23,11 +23,11 @@ O usuário não precisa estar logado no sistema.
 # Cadastro de Especificação no carro
 
 **RF**
-Deve ser possivel cadastrar uma especificação para um carro.
+Deve ser possível cadastrar uma especificação para um carro.
 
 **RN**
-Não deve ser possivel cadastrar uma especificação para um carro não cadastrado.
-Não deve ser possivel cadastrar uma especificação já existente para o mesmo carro.
+Não deve ser possível cadastrar uma especificação para um carro não cadastrado.
+Não deve ser possível cadastrar uma especificação já existente para o mesmo carro.
 O usuário responsável pelo cadastro deve ser um usuário administrador.
 
 # Cadastro de imagens do carro
@@ -45,19 +45,19 @@ O usuário responsável pelo cadastro deve ser um usuário administrador.
 # Aluguel
 
 **RF**
-Deve ser possivel cadastrar um aluguel.
+Deve ser possível cadastrar um aluguel.
 
 **RN**
 O aluguel deve ter duração mínima de 24 horas.
-Não deve ser possivel cadastrar um novo aluguel caso já exista um aberto para o mesmo usuário.
-Não deve ser possivel cadastrar um novo aluguel caso já exista um aberto para o mesmo carro.
+Não deve ser possível cadastrar um novo aluguel caso já exista um aberto para o mesmo usuário.
+Não deve ser possível cadastrar um novo aluguel caso já exista um aberto para o mesmo carro.
 O usuário deve estar logado na aplicação.
 Ao realizar um aluguel, o status do carro deverá ser alterado para indisponível.
 
 # Devolução do Carro
 
 **RF**
-Deve ser possivel realizar a devolução de um carro.
+Deve ser possível realizar a devolução de um carro.
 
 **RN**
 Se o carro for devolvido com menos de 24 horas, deverá ser cobrado a diária completa.
