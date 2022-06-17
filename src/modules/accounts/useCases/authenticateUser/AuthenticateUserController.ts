@@ -3,7 +3,7 @@ import { container } from "tsyringe";
 
 import { AuthenticateUserUseCase } from "./AuthenticateUserUseCase";
 
-class AuthentcateUserController {
+class AuthenticateUserController {
   async handle(request: Request, response: Response): Promise<Response> {
     const { email, password } = request.body;
 
@@ -18,4 +18,4 @@ class AuthentcateUserController {
   }
 }
 
-export { AuthentcateUserController };
+export { AuthenticateUserController };
