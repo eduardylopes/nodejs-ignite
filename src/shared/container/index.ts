@@ -14,7 +14,8 @@ import { RentalsRepository } from "@modules/rentals/infra/typeorm/repositories/R
 import { IRentalsRepository } from "@modules/rentals/repositories/IRentalsRepository";
 import { container } from "tsyringe";
 
-import "@shared/container/providers";
+import "@shared/container/providers/DateProvider";
+import "@shared/container/providers/MailProvider";
 
 container.registerSingleton<ICategoriesRepository>(
   "CategoriesRepository",
