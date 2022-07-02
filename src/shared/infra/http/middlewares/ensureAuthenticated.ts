@@ -1,5 +1,5 @@
 import auth from "@config/auth";
-import { NextFunction, Request } from "express";
+import { NextFunction, Request, Response } from "express";
 import { verify } from "jsonwebtoken";
 
 import { AppError } from "../../../errors/AppError";
@@ -10,6 +10,7 @@ interface IPayload {
 
 export async function ensureAuthenticated(
   request: Request,
+  response: Response,
   next: NextFunction
 ) {
   const authHeader = request.headers.authorization;
