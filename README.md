@@ -10,7 +10,7 @@
 
 [![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=rentx&uri=https%3A%2F%2Fgithub.com%2Feduardylopes%2Frentx%2Fblob%2Fmain%2Finsomnia.json)
 
-API de aluguel de carros, desenvolvida durante o Ignite de NodeJS da Rocketseat.
+API de aluguel de carros, desenvolvida durante o Ignite de Node.js da Rocketseat.
 
 - **[Documentação da API](#)**
 - **[API em produção](#)**
