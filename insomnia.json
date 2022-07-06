@@ -1,0 +1,773 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2022-07-06T13:30:32.619Z",
+  "__export_source": "insomnia.desktop.app:v2022.4.2",
+  "resources": [
+    {
+      "_id": "req_a9b8d38e1a2a4f4ba8c38175d105b136",
+      "parentId": "fld_59c976a668c14a8996d1b5c3283a8b60",
+      "modified": 1657114096910,
+      "created": 1654117826246,
+      "url": "{{ _.baseUrl }}/users",
+      "name": "Sign Up",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Eduardy Lopes\",\n  \"password\": \"123456\",\n  \"email\": \"eduardylopes@gmail.com\",\n\t\"driver_license\": \"AB\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_2bfa0b49b04a483ab155f7993debe2fb"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1656852363908,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_59c976a668c14a8996d1b5c3283a8b60",
+      "parentId": "fld_44c3db4096474d5d910c218d2231ddfa",
+      "modified": 1656633479387,
+      "created": 1654117577049,
+      "name": "User",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1654117562064,
+      "_type": "request_group"
+    },
+    {
+      "_id": "fld_44c3db4096474d5d910c218d2231ddfa",
+      "parentId": "wrk_100ee6d3fb6b4437a4b342c8e1db1fb0",
+      "modified": 1654118046727,
+      "created": 1654118046727,
+      "name": "rentx",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1654118046727,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_100ee6d3fb6b4437a4b342c8e1db1fb0",
+      "parentId": null,
+      "modified": 1654035472316,
+      "created": 1654035472316,
+      "name": "New Document",
+      "description": "",
+      "scope": "design",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_1523d1b9218c4ec49bc1fe9e97460ce7",
+      "parentId": "fld_59c976a668c14a8996d1b5c3283a8b60",
+      "modified": 1657114123791,
+      "created": 1654117608810,
+      "url": "{{ _.baseUrl }}/sessions",
+      "name": "Sign In",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"email\": \"eduardylopes@gmail.com\",\n  \"password\": \"votetop30\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_08cb151d96fc4e9d920024d5b38db6f9"
+        }
+      ],
+      "authentication": { "type": "bearer", "token": "" },
+      "metaSortKey": -1656852363858,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_c8f303ef647141b294cda692ddc955d0",
+      "parentId": "fld_59c976a668c14a8996d1b5c3283a8b60",
+      "modified": 1657114147486,
+      "created": 1655484925261,
+      "url": "http://localhost:3333/password/reset?token=f",
+      "name": "Reset Password",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"password\": \"votetop30\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_ac4f8a6fb0e54a22a24053eb805a56be"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1656810987351,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_5e0cc358497c4bc1b6e02d580cecda0f",
+      "parentId": "fld_59c976a668c14a8996d1b5c3283a8b60",
+      "modified": 1657114208206,
+      "created": 1655479007194,
+      "url": "{{ _.baseUrl }}/password/forgot",
+      "name": "SendForgotEmail",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"eduardylopes@gmail.com\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_f6cb75e01cf44df8bd86d3816c280ea4"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1656790299097.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_443cc3a2d0ff4e29b02cee847db6a966",
+      "parentId": "fld_59c976a668c14a8996d1b5c3283a8b60",
+      "modified": 1657114181871,
+      "created": 1655472786175,
+      "url": "{{ _.baseUrl }}/refresh-token",
+      "name": "Update Refresh Token",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVkdWFyZHlsb3Blc0BnbWFpbC5jb20iLCJpYXQiOjE2NTY2MjEyMjksImV4cCI6MTY1OTIxMzIyOSwic3ViIjoiZGYzZGE0Y2EtZDA4Mi00YTlmLWE4ZmUtZDJkOGE1YzEyNzZhIn0.UBJFKwu2piecQ-kF-lAjGNuJ6C7a3Ml4vMgj69xm2Ko\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_67a017345ba34633aa7a13072db4e768"
+        }
+      ],
+      "authentication": { "type": "bearer", "token": "{{ _.token }}" },
+      "metaSortKey": -1656779954970.75,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_e16d4c5e67584491a4b4d9c07388d3a4",
+      "parentId": "fld_59c976a668c14a8996d1b5c3283a8b60",
+      "modified": 1657114130608,
+      "created": 1656769610844,
+      "url": "{{ _.baseUrl }}/users",
+      "name": "Get Profile",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": { "type": "bearer", "token": "{{ _.token }}" },
+      "metaSortKey": -1656769610844,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_4c862a9b24c14547b9d482ed7d0d3615",
+      "parentId": "fld_59c976a668c14a8996d1b5c3283a8b60",
+      "modified": 1657114131378,
+      "created": 1656633485983,
+      "url": "{{ _.baseUrl }}/users/avatar",
+      "name": "Update Avatar",
+      "description": "",
+      "method": "PATCH",
+      "body": {
+        "mimeType": "multipart/form-data",
+        "params": [
+          {
+            "id": "pair_250feb5b18844c0f9be14ab841e1176b",
+            "name": "avatar",
+            "value": "",
+            "description": "",
+            "type": "file",
+            "fileName": "C:\\Users\\Eduardy\\Pictures\\profile.jpeg"
+          }
+        ]
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "multipart/form-data",
+          "id": "pair_56c6e07bf1be404e93a4133660f84125"
+        }
+      ],
+      "authentication": { "type": "bearer", "token": "{{ _.token }}" },
+      "metaSortKey": -1654117608910,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_51ba5b5b2dda4124a4899c2d124a7ca7",
+      "parentId": "fld_ade259d3e0714d45bc9871fbfe7a3d26",
+      "modified": 1656769596693,
+      "created": 1654119094088,
+      "url": "{{ _.baseUrl }}/cars/images/e5400223-ed5e-4624-9746-9cbef91f5bd7",
+      "name": "Add Image",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "multipart/form-data",
+        "params": [
+          {
+            "id": "pair_65179cce96fb49eab78db8fdb44329ff",
+            "name": "images",
+            "value": "",
+            "description": "",
+            "type": "file",
+            "fileName": "C:\\Users\\Eduardy\\Pictures\\corsa.JPG"
+          }
+        ]
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "id": "pair_6b7134b8dc6d4e0da2dba0aec3f4963a",
+          "name": "",
+          "value": "",
+          "description": ""
+        },
+        {
+          "name": "Content-Type",
+          "value": "multipart/form-data",
+          "id": "pair_05ccd6e8a63d4854a07be44fff87d66e"
+        }
+      ],
+      "authentication": { "type": "bearer", "token": "{{ _.token }}" },
+      "metaSortKey": -1654119094088,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_ade259d3e0714d45bc9871fbfe7a3d26",
+      "parentId": "fld_44c3db4096474d5d910c218d2231ddfa",
+      "modified": 1654118129007,
+      "created": 1654118123829,
+      "name": "Car",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1654117562039,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_98775af503534196b0779bb86ba9d4c9",
+      "parentId": "fld_ade259d3e0714d45bc9871fbfe7a3d26",
+      "modified": 1656768106089,
+      "created": 1654118625632,
+      "url": "{{ _.baseUrl }}/cars/specifications/",
+      "name": "Create Car Specificiation",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"specifications_id\": \"id_here\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_28a42b47d3ab4df19ad27c2793c48982"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1654118625632,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_476b0a03cae743fe968fd0e17833e1b7",
+      "parentId": "fld_ade259d3e0714d45bc9871fbfe7a3d26",
+      "modified": 1654118584373,
+      "created": 1654118566328,
+      "url": "{{ _.baseUrl }}/cars/available",
+      "name": "List Available",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1654118566328,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_20d38d88f15b47789507c691fa87591f",
+      "parentId": "fld_ade259d3e0714d45bc9871fbfe7a3d26",
+      "modified": 1656768059644,
+      "created": 1654118156172,
+      "url": "{{ _.baseUrl }}/cars",
+      "name": "Create",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Corsa\",\n\t\"description\": \"Carro popular\",\n\t\"daily_rate\": 60,\n\t\"license_plate\": \"AXT-1010\",\n\t\"fine_amount\": 100,\n\t\"brand\": \"Chevrolet\",\n\t\"category_id\": \"51ebdf4b-ed9f-439a-9323-52ba547e8c7a\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_7c2564dd7ea749758bfc5066b95a566d"
+        }
+      ],
+      "authentication": { "type": "bearer", "token": "{{ _.token }}" },
+      "metaSortKey": -1654118156172,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_efd0af17900b46818fec4e2b82a0b795",
+      "parentId": "fld_5da0b54ef6a244d5a56d1a2ebcaee539",
+      "modified": 1654119332329,
+      "created": 1654119196711,
+      "url": "{{ _.baseUrl }}/categories/import",
+      "name": "Upload File",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "multipart/form-data",
+        "params": [
+          {
+            "id": "pair_9a3bf326063745c79bc203b7691cf544",
+            "name": "file",
+            "value": "",
+            "description": "",
+            "type": "file",
+            "fileName": "C:\\Users\\Eduardy\\Documents\\teste.xml.txt"
+          }
+        ]
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "multipart/form-data",
+          "id": "pair_cf99cbdeee454c45acdff4aa09d8e191"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1654119196711,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_5da0b54ef6a244d5a56d1a2ebcaee539",
+      "parentId": "fld_44c3db4096474d5d910c218d2231ddfa",
+      "modified": 1654118716771,
+      "created": 1654117562014,
+      "name": "Category",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1654117562032.75,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_cbc010a7ac0049e881ffed5f1147a450",
+      "parentId": "fld_5da0b54ef6a244d5a56d1a2ebcaee539",
+      "modified": 1656621654970,
+      "created": 1654118028386,
+      "url": "{{ _.baseUrl }}/rentals",
+      "name": "List",
+      "description": "",
+      "method": "GET",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"expected_return_rate\": \"2022-06-05\",\n\t\"car_id\": \"#\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_e8a04a2511114786a7a9d2ffe38f4187"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1654118028386,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_29bc61cd0bb24783b1ad0ddeee9db8e2",
+      "parentId": "fld_5da0b54ef6a244d5a56d1a2ebcaee539",
+      "modified": 1656621662432,
+      "created": 1654035472333,
+      "url": "{{ _.baseUrl }}/categories",
+      "name": "Create",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"name\": \"Popular\",\n  \"description\": \"Categoria de carros populares\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_1c1dc78ce05a43859f0c075caba58bea"
+        }
+      ],
+      "authentication": { "type": "bearer", "token": "{{ _.adminToken }}" },
+      "metaSortKey": -1654117562064,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_68dc9914d47a4dbc97b3728ea64ab3c8",
+      "parentId": "fld_4fa64547fe6c4e19a3edc0da3e901927",
+      "modified": 1655474151168,
+      "created": 1654118744568,
+      "url": "{{ _.baseUrl }}/specifications",
+      "name": "Create",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Teto Solar\",\n\t\"description\": \"Carro com teto solar\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_27aa11868eb44ae9a6c16e90cbc1aecc"
+        }
+      ],
+      "authentication": {
+        "type": "bearer",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVkdWFyZHlsb3Blc0BnbWFpbC5jb20iLCJpYXQiOjE2NTU0NzQxMjksImV4cCI6MTY1ODA2NjEyOSwic3ViIjoiZGYzZGE0Y2EtZDA4Mi00YTlmLWE4ZmUtZDJkOGE1YzEyNzZhIn0.KLgd-KniC4vEmXIRFjd1mLfyu9WdN4Utw0ZkW_Etu9o"
+      },
+      "metaSortKey": -1654118744568,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_4fa64547fe6c4e19a3edc0da3e901927",
+      "parentId": "fld_44c3db4096474d5d910c218d2231ddfa",
+      "modified": 1654118714861,
+      "created": 1654118709362,
+      "name": "Specification",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1654117562026.5,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_dc9a3723ca32430d9d718c0d1009abb9",
+      "parentId": "fld_4fa64547fe6c4e19a3edc0da3e901927",
+      "modified": 1656621667754,
+      "created": 1654118885149,
+      "url": "{{ _.baseUrl }}/specifications",
+      "name": "List",
+      "description": "",
+      "method": "GET",
+      "body": { "mimeType": "application/json", "text": "" },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_27aa11868eb44ae9a6c16e90cbc1aecc"
+        }
+      ],
+      "authentication": { "type": "bearer", "token": "{{ _.adminToken }}" },
+      "metaSortKey": -1654118685100,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_a2c87646b8d9424da26c6b99ae2aaab8",
+      "parentId": "fld_795ee76c8fc14388b013fa33a4551af6",
+      "modified": 1656768251690,
+      "created": 1654120848873,
+      "url": "{{ _.baseUrl }}/rentals/user",
+      "name": "Get Rental by User",
+      "description": "",
+      "method": "GET",
+      "body": { "mimeType": "application/json", "text": "" },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_267ee8c84a3d47fb9e8ecc443574b1ef"
+        }
+      ],
+      "authentication": { "type": "bearer", "token": "{{ _.adminToken }}" },
+      "metaSortKey": -1654120848873,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_795ee76c8fc14388b013fa33a4551af6",
+      "parentId": "fld_44c3db4096474d5d910c218d2231ddfa",
+      "modified": 1654119443962,
+      "created": 1654119439894,
+      "name": "Rental",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1654117561976.5,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_353c5df4bc904795b5aeff438e616ac7",
+      "parentId": "fld_795ee76c8fc14388b013fa33a4551af6",
+      "modified": 1656768285001,
+      "created": 1654120752879,
+      "url": "{{ _.baseUrl }}/rentals/devolution/82b99c8c-f08a-419a-a3a1-949381db2632",
+      "name": "Devolution",
+      "description": "",
+      "method": "POST",
+      "body": { "mimeType": "application/json", "text": "" },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_f2fad3b4e6774c9082864167df28aa19"
+        }
+      ],
+      "authentication": { "type": "bearer", "token": "{{ _.token }}" },
+      "metaSortKey": -1654120752879,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_172b4a7722c04e44b78fa9120303dee2",
+      "parentId": "fld_795ee76c8fc14388b013fa33a4551af6",
+      "modified": 1656768277658,
+      "created": 1654119993475,
+      "url": "{{ _.baseUrl }}/rentals",
+      "name": "Create",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"expected_return_date\": \"2022-07-10\",\n\t\"car_id\": \"e5400223-ed5e-4624-9746-9cbef91f5bd7\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_7ea83b914c69444e86a8dab86f4d91b2"
+        }
+      ],
+      "authentication": { "type": "bearer", "token": "{{ _.token }}" },
+      "metaSortKey": -1654119993475,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_62fc2f1fdea3f4f03c27ca6c7b994c9d5eeeb476",
+      "parentId": "wrk_100ee6d3fb6b4437a4b342c8e1db1fb0",
+      "modified": 1657114207766,
+      "created": 1654035472328,
+      "name": "Base Environment",
+      "data": {
+        "baseUrl": "localhost:3333",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NTY3NzE0OTcsImV4cCI6MTY1Njc3MjM5Nywic3ViIjoiZGYzZGE0Y2EtZDA4Mi00YTlmLWE4ZmUtZDJkOGE1YzEyNzZhIn0.T-QdXFZXLzlwXUnPQDL784LENX8qYzm9b3PfGEGyTuU",
+        "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVkdWFyZHlsb3Blc0BnbWFpbC5jb20iLCJpYXQiOjE2NTY3Njc1MDIsImV4cCI6MTY1OTM1OTUwMiwic3ViIjoiZGYzZGE0Y2EtZDA4Mi00YTlmLWE4ZmUtZDJkOGE1YzEyNzZhIn0.UvMF4bps_X-VTA7Nd4EBLV-QFPw2ihdmFVl9-VfBOnY"
+      },
+      "dataPropertyOrder": { "&": ["baseUrl", "token", "refreshToken"] },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1654035472328,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_62fc2f1fdea3f4f03c27ca6c7b994c9d5eeeb476",
+      "parentId": "wrk_100ee6d3fb6b4437a4b342c8e1db1fb0",
+      "modified": 1655486769030,
+      "created": 1654035472331,
+      "name": "Default Jar",
+      "cookies": [
+        {
+          "key": "_csrf",
+          "value": "TRPg-sWcz5H_uRHFVCdLvESR",
+          "domain": "ethereal.email",
+          "path": "/",
+          "hostOnly": true,
+          "creation": "2022-06-17T17:26:09.028Z",
+          "lastAccessed": "2022-06-17T17:26:09.028Z",
+          "id": "7663104274134882"
+        },
+        {
+          "key": "webmail",
+          "value": "s%3AXwm31_N5GGPsWR3UFuzTnC6E6nswxH1B.jFSrdjuSvM9twODSy83Rl%2BpusnRs9WXV%2BHNmzlwIdb0",
+          "domain": "ethereal.email",
+          "path": "/",
+          "httpOnly": true,
+          "hostOnly": true,
+          "creation": "2022-06-17T17:26:09.028Z",
+          "lastAccessed": "2022-06-17T17:26:09.028Z",
+          "id": "4343783223000912"
+        }
+      ],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_5cd168cedc824dfa829c86ed7a1a9f01",
+      "parentId": "wrk_100ee6d3fb6b4437a4b342c8e1db1fb0",
+      "modified": 1657113753351,
+      "created": 1654035472325,
+      "fileName": "Rentx",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    },
+    {
+      "_id": "uts_99579e8d8123446fbadc77579ed3d8a2",
+      "parentId": "wrk_100ee6d3fb6b4437a4b342c8e1db1fb0",
+      "modified": 1654035472334,
+      "created": 1654035472334,
+      "name": "Example Test Suite",
+      "_type": "unit_test_suite"
+    }
+  ]
+}
