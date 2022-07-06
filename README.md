@@ -8,7 +8,7 @@
 [![MIT License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/eduardylopes/rentx/blob/main/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)<br>
 
-[![Run in Insomnia](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Rentx&uri=https%3A%2F%2Fgithub.com%2FDaniel-Vinicius%2Frentx%2Fblob%2Fmain%2Fdocs%2Finsomnia.json)
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=rentx&uri=https%3A%2F%2Fgithub.com%2Feduardylopes%2Frentx%2Fblob%2Fmain%2Finsomnia.json)
 
 API de aluguel de carros, desenvolvida durante o Ignite de NodeJS da Rocketseat.
 
