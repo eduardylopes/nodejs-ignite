@@ -7,7 +7,7 @@ import { injectable } from "tsyringe";
 import { IMailProvider } from "../IMailProvider";
 
 @injectable()
-class SASMailProvider implements IMailProvider {
+class SESMailProvider implements IMailProvider {
   private client: Transporter;
 
   constructor() {
@@ -40,4 +40,4 @@ class SASMailProvider implements IMailProvider {
   }
 }
 
-export { SASMailProvider };
+export { SESMailProvider };
