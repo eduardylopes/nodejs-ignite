@@ -1,10 +1,10 @@
 # Rentx
 
-[![typescript](https://img.shields.io/badge/typescript-4.3.5-3178c6?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
-[![postgres](https://img.shields.io/badge/postgres-8.6.0-326690?style=flat-square&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![typescript](https://img.shields.io/badge/typescript-4.6.3-3178c6?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
+[![postgres](https://img.shields.io/badge/postgres-8.7.3-326690?style=flat-square&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 [![redis](https://img.shields.io/badge/redis-3.1.2-d92b21?style=flat-square&logo=redis&logoColor=white)](https://redis.io/)
-[![eslint](https://img.shields.io/badge/eslint-7.31.0-4b32c3?style=flat-square&logo=eslint)](https://eslint.org/)
-[![jest](https://img.shields.io/badge/jest-27.0.6-brightgreen?style=flat-square&logo=jest)](https://jestjs.io/)
+[![eslint](https://img.shields.io/badge/eslint-8.12.0-4b32c3?style=flat-square&logo=eslint)](https://eslint.org/)
+[![jest](https://img.shields.io/badge/jest-27.0.0-brightgreen?style=flat-square&logo=jest)](https://jestjs.io/)
 [![MIT License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/eduardylopes/rentx/blob/main/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)<br>
 
