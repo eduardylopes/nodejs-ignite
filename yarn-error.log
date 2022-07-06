@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\Eduardy\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js remove dotenv
+  C:\Program Files\nodejs\node.exe C:\Users\Eduardy\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @babel/cli @babel/core @babel/none @babel/plugin-proposal-class-properties @babel/plugin-proposal-decorators @babel/preset-env babel-plugin-module-resolver babel-plugin-transform-typscript-metadata -D
 
 PATH: 
   C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\Eduardy\AppData\Local\Microsoft\WindowsApps;C:\Users\Eduardy\AppData\Roaming\npm;C:\Users\Eduardy\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\heroku\bin
@@ -14,7 +14,17 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: EPERM: operation not permitted, unlink 'C:\Users\Eduardy\Documents\Projects\nodejs-ignite\node_modules\.bin\ts-node-dev'
+  Error: https://registry.yarnpkg.com/@babel%2fnone: Not found
+      at Request.params.callback [as _callback] (C:\Users\Eduardy\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66138:18)
+      at Request.self.callback (C:\Users\Eduardy\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140883:22)
+      at Request.emit (node:events:527:28)
+      at Request.<anonymous> (C:\Users\Eduardy\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141855:10)
+      at Request.emit (node:events:527:28)
+      at IncomingMessage.<anonymous> (C:\Users\Eduardy\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141777:12)
+      at Object.onceWrapper (node:events:641:28)
+      at IncomingMessage.emit (node:events:539:35)
+      at endReadableNT (node:internal/streams/readable:1345:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
 
 npm manifest: 
   {
@@ -47,6 +57,7 @@ npm manifest:
       "typescript": "^4.6.3"
     },
     "scripts": {
+      "build": "tsc",
       "dev": "ts-node-dev -r tsconfig-paths/register --poll --inspect --transpile-only --ignore-watch node_modules --respawn src/shared/infra/http/server.ts",
       "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli",
       "test": "cross-env NODE_ENV=test jest --runInBand --detectOpenHandles",
@@ -61,8 +72,10 @@ npm manifest:
     "dependencies": {
       "aws-sdk": "^2.1166.0",
       "bcryptjs": "^2.4.3",
+      "class-transformer": "^0.5.1",
       "csv-parse": "^5.0.4",
       "dayjs": "^1.11.2",
+      "dotenv": "^16.0.1",
       "express": "^4.17.3",
       "express-async-errors": "^3.1.1",
       "handlebars": "^4.7.7",
@@ -1413,6 +1426,11 @@ Lockfile:
     version "1.2.2"
     resolved "https://registry.yarnpkg.com/cjs-module-lexer/-/cjs-module-lexer-1.2.2.tgz#9f84ba3244a512f3a54e5277e8eef4c489864e40"
     integrity sha512-cOU9usZw8/dXIXKtwa8pM0OTJQuJkxMN6w30csNRUerHfeQ5R6U3kkU/FtJeIf3M202OHfY2U8ccInBG7/xogA==
+  
+  class-transformer@^0.5.1:
+    version "0.5.1"
+    resolved "https://registry.yarnpkg.com/class-transformer/-/class-transformer-0.5.1.tgz#24147d5dffd2a6cea930a3250a677addf96ab336"
+    integrity sha512-SQa1Ws6hUbfC98vKGxZH3KFY0Y1lm5Zm0SY8XX9zbK7FJCyVEac3ATW0RIpwzW+oOfmHE5PMPufDG9hCfoEOMw==
   
   cli-highlight@^2.1.11:
     version "2.1.11"
